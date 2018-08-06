@@ -564,7 +564,7 @@ text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px
 	<script type="text/javascript">
 		jQuery(document).ready( function($){
 			var newDate = new Date();
-    		newDate.setDate(newDate.getDate() + 1);
+    		newDate.setTime(newDate.getTime() + (60*60*1000));
 			$('#countdown-ex1').countdown({until: newDate});
 		});
 		jQuery(window).load(function(){
