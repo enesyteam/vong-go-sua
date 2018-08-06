@@ -11939,6 +11939,9 @@ button.toast-close-button {
 		left: -0.2em;
 		right: 0.2em;
 	}
+	.huawen{
+		left: 75px;
+	}
 }
 @media all and (min-width: 481px) and (max-width: 768px) {
 	#toast-container > div {
@@ -11948,6 +11951,7 @@ button.toast-close-button {
 	#toast-container > div.rtl {
 		padding: 15px 50px 15px 15px;
 	}
+
 }
 
 
