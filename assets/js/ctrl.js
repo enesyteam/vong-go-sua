@@ -58,7 +58,7 @@ goSua.controller('MainCtrl', function( $rootScope, $scope, $http, $window, $docu
 
 	$interval(function(){
 	  AlertSuccessful( makeMessage(), 'Thông báo' );
-	}, random_item( timers ))
+	}, 8000)
 
 	// alert('working');
 	$scope.old_price = 1290000;

@@ -13666,6 +13666,16 @@ body:not(.no-transition) #wrapper,
 .countdown-period{
 	color: #fff !important;
 }
+@media (max-width: 479px){
+	.emphasis-title h1, .emphasis-title h2{
+		padding-top: 150px;
+		font-size: 30px !important;
+	}
+	.huyet_rong{
+		margin-top: 19px;
+	}
+}
+
 #global-notices {
     text-align: right;
     pointer-events: none;
