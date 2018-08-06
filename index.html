@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html dir="ltr" lang="en-US">
+<html dir="ltr" lang="en-US" ng-app="goSua">
 <head>
 
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
@@ -21,11 +21,11 @@
 
 	<!-- Document Title
 	============================================= -->
-	<title>Home - Parallax | Canvas</title>
+	<title>Vòng tay gỗ Sưa cao cấp</title>
 
 </head>
 
-<body class="stretched">
+<body class="stretched" ng-controller="MainCtrl">
 
 	<!-- Document Wrapper
 	============================================= -->
@@ -43,12 +43,16 @@
 					<div class="container clearfix">
 						<div class="emphasis-title vertical-middle center">
 							<h2 data-animate="fadeInUp" style="color:#FFDE00">
-								<small style="color:#999"><strike>1,250,000.</strike><br/></small>
-								<small style="color: #fdfdfe">CHỈ CÒN</small> <strong>849,000</strong></h2>
-							<a href="#" class="button button-rounded button-white button-light button-large">Đặt mua ngay</a>
+								<small style="color:#fff">GIÁ CŨ: <strike>{{ old_price | number: 0 }}</strike><br/></small>
+								<small style="color: #fdfdfe">CHỈ CÒN</small> <strong style="color: #FFDE00;
+font-size: 1.5em;
+font-weight: bold;
+font-family: Helvetica;
+text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0,0,0,.1), 0 0 5px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.2), 0 20px 20px rgba(0,0,0,.15);">{{ price | number: 0 }}</strong><br/><a href="#" data-scrollto="#slider1" class="button button-rounded button-white button-light button-large">Đặt mua ngay</a></h2>
+							
 						</div>
+						<a href="#" data-scrollto="#content" class="one-page-arrow"><i class="icon-angle-down infinite animated fadeInDown" style="color:#fff;font-size: 24px"></i></a>
 					</div>
-
 				</div>
 			</div>
 
@@ -161,26 +165,26 @@
 
 				<div class="col-md-12 nopadding common-height" style="background: #000">
 					<div class="heading-block center" style="margin-top:50px">
-						<h2 style="color:#FFDE00">VÒNG GỖ SƯA CỦA CHÚNG TÔI</h2>
+						<h2 style="color:#FFDE00">ƯU ĐIỂM VÒNG GỖ SƯA CỦA CHÚNG TÔI</h2>
 					</div>
 					<div class="col-md-4 dark col-padding ohidden" style="background-image: url('images/parallax/home/bg5.jpg');    background-size: 700px;">
 						<div>
-							<h3 class="uppercase" style="font-weight: 600;">Gỗ Sưa Quý hiếm</h3>
-							<p style="line-height: 1.8;    font-size: 16px;">Chúng tôi cam kết tất cả các sản phẩm của chúng tôi được làm 100% từ gỗ tự nhiên, cam kết hoàn tiền 100% cho khách hàng nếu quý khách không hài lòng với các sản phẩm của chúng tôi.</p>
+							<h3 class="uppercase" style="font-weight: 600;color:#FFDE00">Gỗ Sưa Quý hiếm</h3>
+							<p style="line-height: 1.8;    font-size: 16px;color:#feee9c">Chúng tôi cam kết tất cả các sản phẩm của chúng tôi được làm 100% từ gỗ tự nhiên, cam kết hoàn tiền 100% cho khách hàng nếu quý khách không hài lòng với các sản phẩm của chúng tôi.</p>
 						</div>
 					</div>
 
 					<div class="col-md-4 dark col-padding ohidden" style="background-image: url('images/parallax/home/bg7.jpg');    background-size: 700px;">
 						<div>
-							<h3 class="uppercase" style="font-weight: 600;">Chế tác thủ công</h3>
-							<p style="line-height: 1.8;    font-size: 16px;">Với niềm đam mê lớn lao về gỗ, các vật dụng làm bằng gỗ, và đặc biệt là vòng đeo tay làm bằng gỗ quý, các nghệ nhân của chúng tôi đã và đang dành tất cả tâm huyết vào từng sản phẩm để mang đến giá trị tốt nhất cho Quý khách hàng.</p>
+							<h3 class="uppercase" style="font-weight: 600;color:#FFDE00">Chế tác thủ công</h3>
+							<p style="line-height: 1.8;    font-size: 16px;color:#feee9c">Với niềm đam mê lớn lao về gỗ, các vật dụng làm bằng gỗ, và đặc biệt là vòng đeo tay làm bằng gỗ quý, các nghệ nhân của chúng tôi đã và đang dành tất cả tâm huyết vào từng sản phẩm để mang đến giá trị tốt nhất cho Quý khách hàng.</p>
 						</div>
 					</div>
 
 					<div class="col-md-4 dark col-padding ohidden" style="background-image: url('images/parallax/home/bg9.jpg');    background-size: 700px;">
 						<div>
-							<h3 class="uppercase" style="font-weight: 600;">Được trì chú</h3>
-							<p style="line-height: 1.8;    font-size: 16px;">Ưu điểm đặc biệt của vòng gỗ Sưa của chúng tôi là tất cả các vòng đều được làm sạch, trì chú và kích hoạt năng lượng từng vòng (cho từng khách hàng), để đảm bảo ai đeo cũng tốt.</p>
+							<h3 class="uppercase" style="font-weight: 600;color:#FFDE00">Được trì chú</h3>
+							<p style="line-height: 1.8;    font-size: 16px;color:#feee9c">Ưu điểm đặc biệt của vòng gỗ Sưa của chúng tôi là tất cả các vòng đều được làm sạch, trì chú và kích hoạt năng lượng từng vòng (cho từng khách hàng), để đảm bảo ai đeo cũng tốt.</p>
 						</div>
 					</div>
 
@@ -194,54 +198,31 @@
 					<div class="fslider testimonial testimonial-full" data-animation="slide" data-pause="3000" data-arrows="false">
 						<div class="flexslider">
 							<div class="slider-wrap">
-								<div class="slide">
+								<div class="slide" ng-repeat="feedback in feedbacks track by $index">
 									<div class="testi-image">
-										<a href="#"><img src="images/testimonials/3.jpg" alt="Customer Testimonails"></a>
+										<a href="#"><img src="https://graph.facebook.com/{{feedback.id}}/picture?height=100&width=100" alt="Customer Testimonails"></a>
 									</div>
 									<div class="testi-content">
-										<p>Mình đeo vòng được gần 1 tuần rồi, phải nói là quá linh nghiệm, rất may mắn nữa. Nhờ sự giúp đỡ của mọi người mà mẹ mình đã mổ thành công rồi, mọi sự đều thuận lợi. Đúng là vạn sự tùy duyên mới gặp Shop. Mình xin cảm ơn nhiều! Chúc shop ngày càng đông khách!</p>
+										<p>{{ feedback.content }}</p>
 										<div class="testi-meta">
-											Trương Đình Mão
-											<span>Lục Ngạn - Bắc Giang.</span>
+											{{ feedback.name }}
+											<span>{{ feedback.address }}</span>
 										</div>
 									</div>
 								</div>
-								<div class="slide">
-									<div class="testi-image">
-										<a href="#"><img src="images/testimonials/2.jpg" alt="Customer Testimonails"></a>
-									</div>
-									<div class="testi-content">
-										<p>Mua hàng của shop đã lâu giờ mới viết đánh giá. Mình rất hài lòng khi mua hàng ở shop. Vòng rất đẹp, vân đẹp lắm và mùi gỗ rất thơm. Gói hàng cẩn thận, giao hàng rất nhanh. Rất thích cách làm việc của shop! Mua 1 lần là muốn mua thêm nhiều lần nữa! </p>
-										<div class="testi-meta">
-											Đặng Trường Giang
-											<span>Phương Mai - Hà Nội.</span>
-										</div>
-									</div>
-								</div>
-								<div class="slide">
-									<div class="testi-image">
-										<a href="#"><img src="images/testimonials/1.jpg" alt="Customer Testimonails"></a>
-									</div>
-									<div class="testi-content">
-										<p>Mình rất ít khi mua hàng trên mạng vì nó không đáng tin, nhưng khi mình đặt mua ở đây thì thay đổi quan điểm hẳn. Giá cả vô cùng phải chăng, vận chuyển nhanh chóng... Mình rất là hài lòng khi mua!!! </p>
-										<div class="testi-meta">
-											Lương Ngọc Bình
-											<span>Trảng Bom - Đồng nai.</span>
-										</div>
-									</div>
-								</div>
+								
 							</div>
 						</div>
 					</div>
 
 				</div>
 
-				<div class="section nomargin noborder" style="background: #FFF">
+				<!-- <div class="section nomargin noborder" style="background: #FFF">
 					<div class="heading-block center nobottomborder nobottommargin">
 						<h2 style="color:rgb(201, 31, 34);">NHANH TAY ĐẶT HÀNG NHẬN NGAY GIÁ TỐT</h2>
 					</div>
-				</div>
-
+				</div> -->
+<!-- 
 				<div class="section notopborder nobottomborder nomargin nopadding nobg">
 					<div class="container clearfix">
 
@@ -273,7 +254,67 @@
 
 					</div>
 				</div>
-				<div class="clear"></div>
+				<div class="clear"></div> -->
+				<div id="slider1" class="section slider-parallax1 clearfix" style="height: 1000px;margin:0">
+
+					<div class="slider-parallax-inner1">
+
+						<div class="fslider" data-speed="2000" data-pause="6000" data-animation="fade" data-arrows="false" data-pagi="false" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; background-color: #333;">
+							<div class="flexslider" style="height: 100% !important;">
+								<div class="slider-wrap" style="height: inherit;">
+									<div class="slide" style="background: url('images/slide/26.jpg') center center; background-size: cover; height: 100% !important;"></div>
+									<div class="slide" style="background: url('images/slide/24.jpg') center center; background-size: cover; height: 100% !important;"></div>
+									<div class="slide" style="background: url('images/slide/31.jpg') center center; background-size: cover; height: 100% !important;"></div>
+								</div>
+							</div>
+						</div>
+
+						<div class="container vertical-middle center clearfix" style="z-index: 2;">
+
+							<div class="wedding-head clearfix">
+								<h2 style="color:#FFDE00">ĐẶT HÀNG NHANH TAY - NHẬN NGAY GIÁ TỐT</h2>
+							</div>
+							<div class="pricing-price">
+								<h1 style="color:#FFDE00">GIÁ SIÊU ƯU ĐÃI</h1>
+										<span class="price-unit" style="color:#FFDE00"><strike>{{ old_price | number: 0 }}</strike></span><strong style="color:#FFDE00">{{ price | number: 0 }}</strong><span class="price-tenure">/SẢN PHẨM</span>
+									</div>
+
+							<div class="contact-widget">
+							<div class="contact-form-result"></div>
+
+							<form class="bottommargin-lg divcenter" style="max-width: 500px;" role="form" novalidate="novalidate" ng-submit="submitOrder()">
+
+								<div class="form-process" ng-if="isSubmitting"></div>
+
+								<div class="col_full">
+									<input type="text" name="wedding-rsvp-name" required="true" class="form-control required input-lg" placeholder="Tên bạn" aria-required="true" ng-model="orderData.name">
+								</div>
+
+								<div class="col_full">
+									<input type="text" name="wedding-rsvp-email" required="true" class="form-control required input-lg" placeholder="Số điện thoại" aria-required="true" ng-model="orderData.mobile">
+								</div>
+
+								<div class="col_full nobottommargin">
+									<button type="submit" name="wedding-rsvp-submit" id="wedding-rsvp-submit" class="button button-3d btn-block nomargin button-dark button-xlarge" value="submit" style="background: #C91F22" >Đặt hàng ngay</button>
+								</div>
+
+							</form>
+
+						</div>
+
+							<!-- <div class="divider divider-short divider-center"><i class="icon-heart3"></i></div> -->
+
+							<p class="lead" style="color:#FFDE00">Thời hạn khuyến mãi <strong>Chỉ còn:</strong></p>
+
+							<div id="countdown-ex1" class="countdown countdown-large coming-soon divcenter" style="max-width:700px;color:#FFDE00"></div>
+
+						</div>
+
+						
+
+					</div>
+
+				</div>
 
 			</div>
 
@@ -284,7 +325,148 @@
 		<!-- Footer
 		============================================= -->
 		<footer id="footer" class="dark">
+			<div class="container">
 
+				<!-- Footer Widgets
+				============================================= -->
+				<div class="footer-widgets-wrap clearfix">
+
+					<div class="col_two_third">
+
+						<div class="col_one_third">
+
+							<div class="widget clearfix">
+
+								<!-- <img src="images/footer-widget-logo.png" alt="" class="footer-logo"> -->
+								<h3>Thông tin liên hệ</h3>
+
+								<address>
+									<strong>Xưởng chế tác:</strong><br>
+									Làng nghề Nhị Khê -<br>
+									Thường Tín - Hà Nội<br>
+								</address>
+
+								<div style="background: url('images/world-map.png') no-repeat center center; background-size: 100%;">
+									<address>
+										<strong>Cơ sở Hà Nội 1:</strong><br>
+										Số 484 Nguyễn Trãi -<br>
+										Thanh Xuân - Hà Nội<br>
+									</address>
+
+									<address>
+										<strong>Cơ sở Hà Nội 2:</strong><br>
+										Số 165 đường Hoàng Hoa Thám -<br>
+										Ba Đình - Hà Nội<br>
+									</address>
+								</div>
+
+							</div>
+
+						</div>
+
+						<div class="col_one_third">
+
+							<div class="widget widget_links clearfix">
+
+								<h4>CÔNG DỤNG VÒNG GỖ SƯA</h4>
+
+								<ul>
+									<li><a href="#">VÒNG GỖ SƯA TRỪ TÀ</a></li>
+									<li><a href="#">VÒNG GỖ SƯA TỐT CHO SỨC KHỎE</a></li>
+									<li><a href="#">ĐỨC PHẬT ĐỘ MỆNH</a></li>
+									<li><a href="#">VÒNG GỖ SƯA MANG ĐẾN MAY MẮN</a></li>
+									<li><a href="#">SANG TRỌNG VÀ ĐẲNG CẤP</a></li>
+									<li><a href="#">VÒNG GỖ SƯA VĨNH CỬU</a></li>
+								</ul>
+
+							</div>
+
+						</div>
+
+						<div class="col_one_third col_last">
+
+							<div class="widget clearfix">
+								<h4>Phản hồi mới nhận</h4>
+
+								<div id="post-list-footer">
+									<div class="spost clearfix">
+										<div class="entry-c">
+											<div class="entry-title">
+												<h4><a href="#">Mình nhận được vòng rồi nhé, rất ưng ý</a></h4>
+											</div>
+											<ul class="entry-meta">
+												<li>Lợi Phan</li>
+											</ul>
+										</div>
+									</div>
+
+									<div class="spost clearfix">
+										<div class="entry-c">
+											<div class="entry-title">
+												<h4><a href="#">Sao mình vẫn chưa nhận được nhỉ?</a></h4>
+											</div>
+											<ul class="entry-meta">
+												<li>Mạnh Dân</li>
+											</ul>
+										</div>
+									</div>
+
+									<div class="spost clearfix">
+										<div class="entry-c">
+											<div class="entry-title">
+												<h4><a href="#">Wow vòng đẹp quá!</a></h4>
+											</div>
+											<ul class="entry-meta">
+												<li>Hiếu Châm</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+
+						</div>
+
+					</div>
+
+					<div class="col_one_third col_last">
+
+						<div class="widget clearfix" style="margin-bottom: -20px;">
+
+							<div class="row">
+
+								<div class="col-md-6 bottommargin-sm">
+									<div class="counter counter-small"><span data-from="50" data-to="{{customers}}" data-refresh-interval="80" data-speed="3000" data-comma="true"></span></div>
+									<h5 class="nobottommargin">Người đã đeo</h5>
+								</div>
+
+								<div class="col-md-6 bottommargin-sm">
+									<div class="counter counter-small"><span data-from="100" data-to="1845" data-refresh-interval="50" data-speed="2000" data-comma="true"></span></div>
+									<h5 class="nobottommargin">Khách hàng hôm nay</h5>
+								</div>
+
+							</div>
+
+						</div>
+
+						<div class="widget subscribe-widget clearfix">
+							<h5><strong>Để lại số điện thoại</strong> để được tư vấn về Phong thủy miễn phí:</h5>
+							<div class="widget-subscribe-form-result"></div>
+							<form id="widget-subscribe-form" role="form" class="nobottommargin" ng-submit="submitOrder()">
+								<div class="input-group divcenter">
+									<span class="input-group-addon"><i class="icon-call"></i></span>
+									<input type="text"  name="widget-subscribe-form-email" class="form-control required email" placeholder="Số điện thoại của bạn" ng-model="orderData.mobile">
+									<span class="input-group-btn">
+										<button class="btn btn-danger" type="submit" style="">Đăng ký tư vấn</button>
+									</span>
+								</div>
+							</form>
+						</div>
+
+					</div>
+
+				</div><!-- .footer-widgets-wrap end -->
+
+			</div>
 			<!-- Copyrights
 			============================================= -->
 			<div id="copyrights">
@@ -334,9 +516,41 @@
 	<script type="text/javascript" src="js/jquery.js"></script>
 	<script type="text/javascript" src="js/plugins.js"></script>
 
+	<script src="assets/js/scripts-angular.min.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/4.5.1/firebase.js"></script>
+	<script>
+      // Initialize Firebase
+      var config = {
+      apiKey: "AIzaSyBxJ3_k9WBoxggnNSmTRoGlogaxeBD5GYw",
+      authDomain: "gosua-4f8d4.firebaseapp.com",
+      databaseURL: "https://gosua-4f8d4.firebaseio.com",
+      projectId: "gosua-4f8d4",
+      storageBucket: "gosua-4f8d4.appspot.com",
+      messagingSenderId: "621807127051"
+      };
+      firebase.initializeApp(config);
+    </script>
+    <script src="assets/js/angularfire.min.js"></script>
+    <script src="assets/js/firebaseService.js"></script>
+	<script src="assets/js/app.js"></script>
+	<script src="assets/js/ctrl.js"></script>
+
 	<!-- Footer Scripts
 	============================================= -->
 	<script type="text/javascript" src="js/functions.js"></script>
+	<script type="text/javascript">
+		jQuery(document).ready( function($){
+			var newDate = new Date();
+    		newDate.setDate(newDate.getDate() + 1);
+			$('#countdown-ex1').countdown({until: newDate});
+		});
+		jQuery(window).load(function(){
+			var t=setTimeout(function(){
+				$( '.flexslider .slide' ).resize();
+			},500);
+		});
+
+	</script>
 
 </body>
 </html>

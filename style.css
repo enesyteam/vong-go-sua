@@ -141,6 +141,7 @@ body {
 	line-height: 1.5;
 	color: #555;
 	font-family: 'Roboto', sans-serif;
+	background: #000
 }
 
 a {
@@ -540,7 +541,7 @@ span.middot {
 }
 
 .parallax {
-	background-color: transparent;
+	background-color: #000;
 	background-attachment: fixed;
 	background-position: 50% 0;
 	background-repeat: no-repeat;
@@ -13656,4 +13657,8 @@ body:not(.no-transition) #wrapper,
 
 .yellow {
 	color: #FFDE00 !important;
+}
+.countdown-amount,
+.countdown-period{
+	color: #fff !important;
 }
