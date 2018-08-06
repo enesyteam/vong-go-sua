@@ -66,7 +66,7 @@ goSua.controller('MainCtrl', function( $rootScope, $scope, $http, $window, $docu
 
 	$scope.welcome_message = "Chào mừng bạn đến với Phong thủy Tại Tâm";
 
-	console.log( MFirebaseService );
+	// console.log( MFirebaseService );
 
 	$scope.feedbacks = [
 		{
@@ -115,7 +115,8 @@ goSua.controller('MainCtrl', function( $rootScope, $scope, $http, $window, $docu
 			$scope.$apply(function(){
 				$scope.isSubmitting = false;
 			})
-			alert('Cảm ơn bạn đã đặt hàng. Chúng tôi sẽ liên hệ bạn trong giây lát!');
+			// alert('Cảm ơn bạn đã đặt hàng. Chúng tôi sẽ liên hệ bạn trong giây lát!');
+			AlertSuccessful( 'Cảm ơn bạn đã đặt hàng. Chúng tôi sẽ liên hệ bạn trong giây lát!', 'Thông báo' );
 			$scope.orderData = {
 				name: '',
 				mobile: '',
