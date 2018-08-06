@@ -4,6 +4,8 @@ goSua.controller('MainCtrl', function( $rootScope, $scope, $http, $window, $docu
 	$scope.old_price = 1290000;
 	$scope.price = 790000;
 
+	$scope.welcome_message = "Chào mừng bạn đến với Phong thủy Tại Tâm";
+
 	console.log( MFirebaseService );
 
 	$scope.feedbacks = [
