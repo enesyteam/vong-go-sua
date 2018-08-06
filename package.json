@@ -1,0 +1,23 @@
+{
+  "name": "sua-do",
+  "version": "1.0.0",
+  "description": "sdf",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/enesyteam/vong-go-sua.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/enesyteam/vong-go-sua/issues"
+  },
+  "homepage": "https://github.com/enesyteam/vong-go-sua#readme",
+  "dependencies": {
+    "angular-toastr": "^2.1.1",
+    "toastr": "^2.1.4"
+  }
+}

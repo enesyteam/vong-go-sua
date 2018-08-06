@@ -17,6 +17,7 @@
 	<link rel="stylesheet" href="css/magnific-popup.css" type="text/css" />
 
 	<link rel="stylesheet" href="css/responsive.css" type="text/css" />
+	<link rel="stylesheet" href="node_modules/angular-toastr/dist/angular-toastr.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 
 	<!-- Document Title
@@ -54,7 +55,7 @@
 		 greeting_dialog_display="show">
 		</div>
 		<div class="top_tiao"></div>
-		<p class="ub_fh abs_tl huawen" style="z-index: 9999;top: 15px">
+		<p class="ub_fh abs_tl huawen" style="z-index: 10;top: 15px">
             <img src="images/parallax/home/pai.png" alt="" width="507" height="168" class="abs_tl paibian flipy" style="z-index:9999">
         </p>
 		<section id="slider" class="slider-parallax full-screen with-header force-full-screen clearfix">
@@ -66,12 +67,14 @@
 					<div class="container clearfix">
 						<div class="emphasis-title vertical-middle center">
 							<h2 data-animate="fadeInUp" style="color:#FFDE00">
-								<small style="color:#fff">GIÁ CŨ: <strike>{{ old_price | number: 0 }}</strike><br/></small>
-								<small style="color: #fdfdfe">CHỈ CÒN</small> <strong style="color: #FFDE00;
+								<small style="color:#999">GIÁ CŨ <strike>{{ old_price | number: 0 }}</strike></small>
+								<small style="color: #FFDE00">CHỈ CÒN:</small> <strong style="color: #FFDE00;
 font-size: 1.5em;
 font-weight: bold;
 font-family: Helvetica;
-text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0,0,0,.1), 0 0 5px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.2), 0 20px 20px rgba(0,0,0,.15);">{{ price | number: 0 }}</strong><br/><a href="#" data-scrollto="#slider1" class="button button-rounded button-white button-light button-large">Đặt mua ngay</a></h2>
+text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0,0,0,.1), 0 0 5px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.2), 0 20px 20px rgba(0,0,0,.15);">{{ price | number: 0 }}</strong><br/>
+<img src="images/parallax/home/huyet_rong.png" alt="" width="250" height="250" class=""><br />
+<a href="#" data-scrollto="#slider1" class="button button-rounded button-white button-light button-large" style="background: #C91F22"><span style="color:#fff">Đặt mua ngay</span></a></h2>
 							
 						</div>
 						<a href="#" data-scrollto="#content" class="one-page-arrow"><i class="icon-angle-down infinite animated fadeInDown" style="color:#fff;font-size: 24px"></i></a>
@@ -298,7 +301,8 @@ text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px
 								<h2 style="color:#FFDE00">ĐẶT HÀNG NHANH TAY - NHẬN NGAY GIÁ TỐT</h2>
 							</div>
 							<div class="pricing-price">
-								<h1 style="color:#FFDE00">GIÁ SIÊU ƯU ĐÃI</h1>
+								<h1 style="color:#FFDE00">GIÁ SIÊU ƯU ĐÃI
+									<img src="images/parallax/home/huyet_rong.png" alt="" width="150" height="150" class=""><br /></h1>
 										<span class="price-unit" style="color:#FFDE00"><strike>{{ old_price | number: 0 }}</strike></span><strong style="color:#FFDE00">{{ price | number: 0 }}</strong><span class="price-tenure">/SẢN PHẨM</span>
 									</div>
 
@@ -541,6 +545,7 @@ text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px
 
 	<script src="assets/js/scripts-angular.min.js"></script>
 	<script src="https://www.gstatic.com/firebasejs/4.5.1/firebase.js"></script>
+	<script src="node_modules/angular-toastr/dist/angular-toastr.tpls.js"></script>
 	<script>
       // Initialize Firebase
       var config = {

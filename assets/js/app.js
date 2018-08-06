@@ -1,5 +1,6 @@
 var goSua = angular.module('goSua', [
-    'mFirebase'
+    'mFirebase',
+    'toastr'
 	])
     .constant('appVersion', '4.4.0')
     .constant('releaseDate', 'May-20, 2018')

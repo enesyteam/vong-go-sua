@@ -1,5 +1,65 @@
 goSua.controller('MainCtrl', function( $rootScope, $scope, $http, $window, $document, $filter, 
-	$timeout, MFirebaseService ) {
+	$timeout, MFirebaseService,toastr, toastrConfig, $interval ) {
+
+	var configToastr = function() {
+        toastrConfig.closeButton = false;
+        toastrConfig.timeOut = 3000;
+        toastrConfig.toastClass = 'notice';
+        toastrConfig.containerId = 'global-notices';
+        toastrConfig.iconClasses = {
+            error: 'is-error',
+            info: 'is-info',
+            success: 'is-success',
+            warning: 'is-warning'
+          };
+        // toastrConfig.positionClass = 'toast-top-right';
+        toastrConfig.positionClass = "toast-bottom-right";
+    }
+
+    configToastr();
+
+    function AlertError(c, d) {
+        toastr.error(c, d)
+    };
+
+    function AlertSuccessful(c, d) {
+        toastr.success(c, d)
+    };
+
+    // AlertSuccessful( 'Đức Thành vừa đặt hàng thành công, Số ĐT 0912.525...', 'Thông báo' );
+
+    function random_item(items){
+		return items[Math.floor(Math.random()*items.length)];
+	}
+
+	function makeMessage(){
+		return random_item( names ) + ' vừa đặt hàng thành công. Số điện thoại ' + random_item( mobiles );
+	}
+
+	var names = [ 'Đức Thành', 
+	'Hoàng Nghĩa', 'Trọng Đức', 'Khánh BDS', 
+	'Lâm Sung', 'Hoàng Sơn', 'Đình Hà',
+	'Phan Trọng Lưu',
+	'Nguyễn Đức Huấn',
+	'Đặng Văn Thành',
+	'Trương Việt Hùng',
+	'Đỗ Văn Quân',
+	'Nguyễn Hải',
+	'Đức Cường',
+	'Hà Minh',
+	'Tonny Hùng',
+	'Bob Dylan' ];
+	var mobiles = [ '091285....', '0168255.....', '0986154...', '0978155...', 
+	'0978414...', '09130252...', '0168225...', '0977121...', '0982125...' ];
+	var timers = [ 8000, 15000, 3500, 10000, 16000, 1450 ];
+	
+
+	// setInterval(AlertSuccessful( makeMessage(), 'Thông báo' ),1000);
+
+	$interval(function(){
+	  AlertSuccessful( makeMessage(), 'Thông báo' );
+	}, random_item( timers ))
+
 	// alert('working');
 	$scope.old_price = 1290000;
 	$scope.price = 790000;
