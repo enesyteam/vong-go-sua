@@ -1,7 +1,7 @@
 goSua.controller('MainCtrl', function( $rootScope, $scope, $http, $window, $document, $filter, 
 	$timeout, MFirebaseService ) {
 	// alert('working');
-	$scope.old_price = 1090000;
+	$scope.old_price = 1290000;
 	$scope.price = 790000;
 
 	console.log( MFirebaseService );

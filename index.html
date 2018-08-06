@@ -26,10 +26,31 @@
 </head>
 
 <body class="stretched" ng-controller="MainCtrl">
+	<script>
+	  window.fbAsyncInit = function() {
+	    FB.init({
+	      appId            : '1085772744867580',
+	      autoLogAppEvents : true,
+	      xfbml            : true,
+	      version          : 'v3.1'
+	    });
+	  };
+
+	  (function(d, s, id){
+	     var js, fjs = d.getElementsByTagName(s)[0];
+	     if (d.getElementById(id)) {return;}
+	     js = d.createElement(s); js.id = id;
+	     js.src = "https://connect.facebook.net/en_US/sdk.js";
+	     fjs.parentNode.insertBefore(js, fjs);
+	   }(document, 'script', 'facebook-jssdk'));
+	</script>
 
 	<!-- Document Wrapper
 	============================================= -->
 	<div id="wrapper" class="clearfix">
+		<div class="fb-customerchat"
+		 page_id="1358439614302715">
+		</div>
 		<div class="top_tiao"></div>
 		<p class="ub_fh abs_tl huawen" style="z-index: 9999;top: 15px">
             <img src="images/parallax/home/pai.png" alt="" width="507" height="168" class="abs_tl paibian flipy" style="z-index:9999">
@@ -551,6 +572,7 @@ text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px
 		});
 
 	</script>
+
 
 </body>
 </html>
