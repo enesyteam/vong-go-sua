@@ -127,7 +127,7 @@ goSua.controller('MainCtrl', function( $rootScope, $scope, $http, $window, $docu
 	];
 
 	$scope.customers = Math.floor( ((new Date().getTime())) / 1000 ) - 1533340000;
-	$scope.today_customers = Math.floor( ((new Date().getTime())) / 1000 ) - 1533543000;
+	$scope.today_customers = /*Math.floor( ((new Date().getTime())) / 1000 ) - 1533543000*/1028;
 
 	$scope.orderData = {
 		name: '',
