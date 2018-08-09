@@ -1436,7 +1436,7 @@
 	.heading-block ~ p:not(.lead) { font-size: 15px; }
 
 	.emphasis-title h1,
-	.emphasis-title h2 { font-size: 44px !important; }
+	.emphasis-title h2 { font-size: 25px !important; }
 
 	.wedding-head { font-size: 48px; }
 

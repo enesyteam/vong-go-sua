@@ -11939,8 +11939,11 @@ button.toast-close-button {
 		left: -0.2em;
 		right: 0.2em;
 	}
-	.huawen{
-		left: 75px;
+	.huawen .paibian {
+		left: 255px;
+	}
+	.old_price h2 {
+		margin-top: 50px;
 	}
 }
 @media all and (min-width: 481px) and (max-width: 768px) {
@@ -11952,6 +11955,12 @@ button.toast-close-button {
 		padding: 15px 50px 15px 15px;
 	}
 
+}
+
+@media (max-width: 767px) {
+	.old_price h2 {
+	    margin-top: 50px;
+	}
 }
 
 
@@ -13668,7 +13677,7 @@ body:not(.no-transition) #wrapper,
 }
 @media (max-width: 479px){
 	.emphasis-title h1, .emphasis-title h2{
-		padding-top: 150px;
+		padding-top: 186px;
 		font-size: 30px !important;
 	}
 	.huyet_rong{
